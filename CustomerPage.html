@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Customer Feedback</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        /* *{
+            border: 1px dotted black
+        } */
+        body {
+            background-image: url("background.jpeg");
+        }
+        .try {
+            background-color: whitesmoke;
+        }
+        ​.container, .try {
+            margin: auto;
+            width: 90%;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        ​.c1 {
+            margin-top: 100px;
+            background-color: white;
+            margin-bottom: 50px;
+        }
+        ​.f1 {
+            margin-top: 100px;
+        }
+        h1 {
+            color: blue;
+            margin-top: 35px;
+            text-align: center;
+        }
+        #topnav{
+            max-width: 30%;
+        }
+
+        .inpbox{
+            margin-left: 10px;
+            
+        }
+
+    </style>
+</head>
+<body style="height: 100%;">
+    <!-- navigation bar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-info">
+        <div class="container bg-info">
+            <a class="navbar-brand font-italic text-white" href="LandingPage.html">GameStop 2.0</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <!--Change mr-auto to ml-auto for it to appear left side-->
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="LandingPage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="AboutUsPage.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="ProductandService.html">Product and Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="CustomerPage.html">Customer Feedback</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="topnav">
+            
+           
+            
+    </nav>
+    ​<br>
+    <!-- Header Title -->
+    <div class="container c1">
+        <br>
+        <h1> Customer Feedback </h1>
+        <br>
+        <form class="try" id="CustomersForm" action="URL" method="POST" enctype="multipart/form-data" autocomplete="off">
+
+            <!-- <fieldset class="try">
+                <legend> Customers Form: </legend>
+                <div class="container"></div>
+                    <div class="row"></div>
+
+                        <div class="col-1">
+                            <label for="name"> Name </label>
+                            <input type="text" id="name" value="" name="Name" required>
+                        </div>
+
+                        <div class="col-1">
+                            <label for="username"> Username </label>
+                            <input type="text" id="username" value="" name="Username" required>
+                        </div>
+
+                        <div class="col-1">
+                            <label for="email"> Email </label>
+                            <input type="email" id="email" value="" name="Email" required>
+                        </div>
+
+                    </div>
+                </div>
+            </fieldset> -->
+
+            <fieldset class="try">
+                <legend> <b>Customers Form:</b> </legend>
+                <label for="name"> Name </label>
+                <input class="inpbox" type="text" id="name" value="" name="Name" required>
+                <br>
+                <label for="username"> Username </label>
+                <input class="inpbox" type="text" id="username" value="" name="Username" required>
+                <br>
+                <label for="email"> Email </label>
+                <input class="inpbox" type="email" id="email" value="" name="Email" required>
+            </fieldset>
+
+            <fieldset class="try">
+                <legend> <b>Do you want to be on the mailing list?</b></legend>
+                <input type="radio" name="option" value="yes"> Yes
+                <input type="radio" name="option" value="no"> No
+            </fieldset>
+
+            <fieldset class="try">
+                <legend><b>What services are you interested in?</b></legend>
+                <input type="checkbox" name="Promos" value="promos"> Promotional Deals
+                <input type="checkbox" name="Trading" value="Trades"> Trading
+            </fieldset>
+
+            <fieldset class="try">
+                <legend><b>Comments:</b></legend>
+                <textarea name="message" rows="5" cols="30" maxlength="1000">
+                  </textarea>
+                <button type="submit" id="Finished"> Submit</button>
+                <button type="reset"> Reset</button>
+            </fieldset>
+
+        </form>
+        <br>
+        <ul class="try" id="Customerslist">
+            <label><b>Customer's List</b></label>
+        </ul>
+    </div>
+    ​ <br>
+    <footer class="page-footer font-small blue fixed-bottom bg-dark f1">
+        <div class="footer-copyright text-center py-3 text-light"> 2020 Copyright: GameStop 2.0</div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+        document.getElementById("Finished").addEventListener("click", handleClick);
+        function handleClick(event) {
+            event.preventDefault();
+            let name = document.getElementById("name").value;
+            let username = document.getElementById("username").value;
+            let Email = document.getElementById("email").value;
+            let userObject = {
+                Name: name,
+                e: Email,
+                UName: username
+            }
+            alert("Form Submitted");
+            document.getElementById("CustomersForm").reset();
+            writeCustomers(userObject);
+        }
+        function writeCustomers(user) {
+            let root = document.getElementById("Customerslist");
+            let li = document.createElement("li");
+            li.textContent = `Name: ${user.Name}, Username: ${user.UName} Email: ${user.e}`;
+            root.appendChild(li);
+        }
+    </script>
+</body>
+</html>

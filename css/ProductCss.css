@@ -1,0 +1,30 @@
+.card-group{
+    margin: 10px;
+}
+.card {
+    margin-right: 15px;
+    border: none;
+    border-radius: 5px;
+    /* margin-left: 10px; */
+}
+.card-body {
+    padding: 5px;
+}
+
+.Cart{
+    margin:10px;
+}
+.removeButton {
+    margin-left: 15px;
+}
+
+#totalCost {
+    text-align: left;
+    font-weight: bold;
+}
+
+p {
+    color: blue;
+}
+
+

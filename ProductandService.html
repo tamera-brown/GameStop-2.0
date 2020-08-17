@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+​
+<head>
+    <title>Product and Services</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+​
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+​
+    <link rel="stylesheet" href="css/ProductCss.css">
+    <style>
+        /* * {
+            border: 1px dotted black
+        } */
+        body {
+            background-image: url("background.jpeg");
+        }
+​
+        .container {
+            margin: auto;
+            width: 80%;
+            padding: 10px;
+            border-radius: 10px;
+        }
+​
+        .c1 {
+            margin-top: 50px;
+            background-color: white;
+            margin-bottom: 50px;
+        }
+​
+        .f1 {
+            margin-top: 100px;
+        }
+        
+        h1 {
+            color: blue;
+            margin-top: 50px;
+            text-align: center;
+        }
+        h5{
+            color: blue;
+        }
+    </style>
+</head>
+​
+<body style="height: 100%;">
+​
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-info">
+        <div class="container bg-info">
+            <a class="navbar-brand font-italic text-white" href="LandingPage.html">GameStop 2.0</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+​
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <!--Change mr-auto to ml-auto for it to appear left side-->
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="LandingPage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="AboutUsPage.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="ProductandService.html">Product and Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="CustomerPage.html">Customer Feedback</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+​
+    <div>
+        <br>
+        <h1>Product and Services</h1>
+    </div>
+​
+    <div class="container c1">
+        <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-4 mx-auto">
+                <!-- Products  -->
+                <div class="card-group">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" style="height: 40%" src="Game Images/CoD-Cold-War.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Call of Duty</h5>
+                            <p class="card-text">Send players back to the struggle for world dominance between the U.S. and the Soviet Union. 
+                                A variety of maps, including Jungle, Summit, and Nuketown, will be playable. Multiplayer. Online.</p>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-primary btn-lg btn-block"
+                                onclick="AddtoCart()" id="gamePrice" data-name = "Call of Duty" data-price = "50">$50</button>
+                        </div>
+​
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" style="height: 40%" src="Game Images/Need For Speed Heat.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title" id="game2Title">Need For Speed Heat</h5>
+                            <p class="card-text">The lines of the law fade when the sun starts to set. By daylight, compete 
+                                in the Speedhunter Showdown, a series of sanctioned events where you can earn Bank to customize your personal fleet of cars.</p>
+​
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-primary btn-lg btn-block" onclick="AddtoCart()" id="gamePrice" data-name = "Need For Speed Heat" data-price = "40">$40</button>
+                        </div>
+​
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" style="height: 40%" src="Game Images/Overwatch.jpeg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Overwatch</h5>
+                            <p class="card-text">THE WORLD NEEDS HEROES! Join over 40 million players as you take your place in the world of Overwatch! Engage your 
+                                enemies in iconic locations from around the globe in the ultimate team-based shooter.</p>
+​
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-primary btn-lg btn-block" onclick="AddtoCart()" id="gamePrice" data-name = "Overwatch" data-price = "40">$40</button>
+                        </div>
+​
+                    </div>
+                </div>
+​
+                <div class="card-group">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" style="height: 40%" src="Game Images/Pokemon Go.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Pokemon GO</h5>
+                            <p class="card-text">Mobile online game. Pokémon: Let's Go, Pikachu! and Pokémon: Let's Go, Eevee! bring the experience of a classic Pokémon RPG.You’ll 
+                                be able to throw Poké Balls in game with a flick of your wrist! In addition to motion controls, the device lights up with a variety of colors, vibrates, 
+                                and plays sounds. You can also take one of your favorite Pokémon from these games for a stroll as you go about your daily life in the real world. 
+                                The Poké Ball Plus even works as a Pokémon GO Plus when playing Pokémon GO.</p>
+​
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-primary btn-lg btn-block" onclick="AddtoCart()" id="gamePrice" data-name = "Pokemon GO" data-price = "10">$10</button>
+                        </div>
+​
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" style="height: 40%" src="Game Images/Starcraft.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Starcraft</h5>
+                            <p class="card-text">StarCraft II: Legacy of the Void is a standalone expansion pack to the military science fiction real-time strategy game 
+                                StarCraft II: Wings of Liberty, and the third and final part of the StarCraft II trilogy. Experience intergalactic warfare through an epic story campaign, 
+                                best-in-class multiplayer competition, and collaborative co-op missions. 
+                                EXPERIENCE THE GAME THAT REDEFINED THE REAL-TIME STRATEGY GENRE. TERRAN, ZERG, OR PROTOSS – THE GALAXY IS YOURS TO CONQUER.</p>
+​
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-primary btn-lg btn-block" onclick="AddtoCart()" id="gamePrice" data-name = "Starcraft" data-price = "20">$20</button>
+                        </div>
+​
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" style="height: 40%" src="Game Images/Titanfall 2.png"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">TitanFall 2</h5>
+                            <p class="card-text">Experience a captivating single player story. Titanfall® 2 features a single player campaign packed with action and inventive twists. 
+                                Play as a Militia rifleman stranded behind enemy lines, who encounters a veteran Vanguard-class Titan. Enjoy multiplayer action that's second to none. The sequel gives players more of the adrenaline-fueled multiplayer combat 
+                                they've come to expect from the franchise. And be sure to stand out in the middle of all the chaos with new, expanded Pilot, Titan and loadout personalization options!</p>
+​
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-primary btn-lg btn-block" onclick="AddtoCart()" id="gamePrice" data-name = "TitanFall 2" data-price = "30">$30</button>
+                        </div> 
+​
+                    </div>
+​
+                </div>
+            </div>
+​
+            <div class="col-lg-3 col-md-3 col-sm-2 mx-auto shoppingCart" style="display: none" id="cart">
+                <!-- Game Cart  -->
+                <div class="Cart">
+                    <H5>Shopping Cart</H5>
+                    <p id =CustomerCart></p>
+                    
+                    <p id= "totalCost"></P>
+                </div>
+            </div>
+        </div>
+    </div>
+​
+    <footer class="page-footer font-small blue fixed-bottom bg-dark f1">
+        <div class="footer-copyright text-center py-3 text-light"> 2020 Copyright: GameStop 2.0</div>
+    </footer>
+    <script src="JavaScript/products.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+​
+</html>
